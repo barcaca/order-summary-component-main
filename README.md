@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Front End Mentor](https://www.frontendmentor.io/solutions/order-summary-component-sassscss-RZaBb7WXIv)
+- Live Site URL: [Vercel APP](https://order-summary-component-main-sooty-rho.vercel.app)
 
 ## My process
 
