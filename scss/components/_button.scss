@@ -1,0 +1,34 @@
+// ========================== //
+//          BUTTON            //
+// ========================== //
+
+@use "../base" as *;
+@use "sass:map";
+
+//--BUTTON----//
+/*--START BUTTON--------------------*/
+.btn {
+  @include font-style(base, "bold");
+  padding: $ss-3;
+  text-decoration: none;
+  border-radius: $ss-3;
+  &-primary {
+    color: $theme-white-color;
+    background-color: $theme-bright-blue;
+    box-shadow: $shadow-sharp;
+    &:hover {
+      background-color: lighten($theme-bright-blue, 15%);
+      box-shadow: $shadow-diffuse;
+    }
+  }
+  &.btn-outline {
+    width: max-content;
+    margin: auto;
+    padding: $ss-2;
+    color: $theme-desaturated-blue;
+    &:hover {
+      color: $theme-dark-blue;
+    }
+  }
+}
+/*--END BUTTON--------------------*/

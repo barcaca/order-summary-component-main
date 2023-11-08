@@ -1,0 +1,52 @@
+// ========================== //
+//           CARD             //
+// ========================== //
+
+@use "../base" as *;
+@use "sass:map";
+
+//--CARD----//
+/*--START CARD--------------------*/
+.card {
+  grid-row: 2;
+  width: 100%;
+  background-color: white;
+  border-radius: $ss-5;
+  box-shadow: $shadow-sharp;
+  &__image {
+    border-radius: $ss-5 $ss-5 0 0;
+  }
+  &__order {
+    @include grid($gap: $ss-5);
+    padding: $ss-7 $ss-6;
+    text-align: center;
+  }
+  &__title {
+    @include font-style(h4, $lh: sm);
+  }
+  &__description {
+    padding-inline: $ss-2;
+  }
+  &__plan {
+    @include grid(repeat(4, 1fr));
+    align-items: center;
+    padding: $ss-3;
+    background-color: $theme-very-pale-blue;
+    border-radius: $ss-3;
+  }
+  &__anual {
+    @include font-style(sm);
+    @include grid();
+    grid-column: span 2;
+    text-align: start;
+    &-swap {
+      @include font-style(sm, bold);
+      color: $theme-bright-blue;
+      &:hover {
+        color: $theme-desaturated-blue;
+        text-decoration: none;
+      }
+    }
+  }
+}
+/*--END CARD--------------------*/

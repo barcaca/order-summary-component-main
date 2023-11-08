@@ -1,0 +1,160 @@
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+/*--START RESET--------------------*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  border: 0 solid transparent;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: hsl(224, 23%, 55%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*--END RESET--------------------*/
+/*--START CARD--------------------*/
+.card {
+  grid-row: 2;
+  width: 100%;
+  background-color: white;
+  border-radius: 1.25rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+    0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+.card__image {
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+.card__order {
+  display: grid;
+  gap: 1.25rem;
+  padding: 1.75rem 1.5rem;
+  text-align: center;
+}
+.card__title {
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+.card__description {
+  padding-inline: 0.5rem;
+}
+.card__plan {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  padding: 0.75rem;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0.75rem;
+}
+.card__anual {
+  display: grid;
+  grid-column: span 2;
+  font-size: 0.875rem;
+  text-align: start;
+}
+.card__anual-swap {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+}
+.card__anual-swap:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+
+/*--END CARD--------------------*/
+/*--START BUTTON--------------------*/
+.btn {
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 0.75rem;
+}
+.btn-primary {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+    0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-primary:hover {
+  background-color: #766cea;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+}
+.btn.btn-outline {
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  padding: 0.5rem;
+  color: hsl(224, 23%, 55%);
+}
+.btn.btn-outline:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+/*--END BUTTON--------------------*/
+/*--START LAYOUT--------------------*/
+body {
+  background: hsl(225, 100%, 94%) url("/images/pattern-background-mobile.svg");
+  background-size: cover;
+}
+@media (min-width: 600px) {
+  body {
+    background: hsl(225, 100%, 94%)
+      url("/images/pattern-background-desktop.svg") repeat-x;
+  }
+}
+
+/*--START MAIN--------------------*/
+#main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  align-items: center;
+  max-width: 450px;
+  height: 100vh;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+#main .main__attribution {
+  grid-row: 3;
+  font-size: 0.75rem;
+  text-align: center;
+}
+#main .main__attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*--END MAIN--------------------*/
+/*--END LAYOUT--------------------*/
+
+/*# sourceMappingURL=e:/Designer/FrontendMentor/order-summary-component-main/dist/styles.css.map */

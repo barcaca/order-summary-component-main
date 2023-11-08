@@ -1,0 +1,95 @@
+//------------------------//
+//       VARIÁVEIS        //
+//------------------------//
+
+//--GOOGLE FONTS-----//
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+//--FONTS FAMILY-----//
+$ff-sans: "Red Hat Display", sans-serif;
+
+//--FONTS WEIGTH-----//
+$fw-500: 500;
+$fw-700: 700;
+$fw-900: 900;
+
+$font-weight : (
+  "medium": $fw-500,
+  "bold":   $fw-700,
+  "black":  $fw-900
+);
+
+//--FONTS SIZES-------//
+$fsize-base:    1rem;                // 16
+$fsize-sm:      $fsize-base * .875;  // 14
+$fsize-lg:      $fsize-base * 1.25;  // 20
+$fsize-h1:      $fsize-base * 2.5;   // 40
+$fsize-h2:      $fsize-base * 2;     // 32
+$fsize-h3:      $fsize-base * 1.75;  // 28
+$fsize-h4:      $fsize-base * 1.5;   // 24
+$fsize-h5:      $fsize-base * 1.25;  // 20
+$fsize-h6:      $fsize-base;
+
+$font-sizes: (
+  "base": $fsize-base,
+  "sm":   $fsize-sm,
+  "lg":   $fsize-lg,
+  "h1":   $fsize-h1,
+  "h2":   $fsize-h2,
+  "h3":   $fsize-h3,
+  "h4":   $fsize-h4,
+  "h5":   $fsize-h5,
+  "h6":   $fsize-h6
+);
+
+//--LINE HEIGHT-----//
+$line-h-base: 1.5;
+$line-h-sm:   1.25;
+$line-h-lg:   2;
+
+$line-height: (
+  "base" : $line-h-base,
+  "sm" :   $line-h-sm,
+  "lg" :   $line-h-lg,
+);
+
+//--SIZES & SPACE------//
+$ss-1: 0.25rem; // 4  if 1rem=16
+$ss-2: 0.5rem;  // 8
+$ss-3: 0.75rem; // 12
+$ss-4: 1rem;    // 16
+$ss-5: 1.25rem; // 20
+$ss-6: 1.5rem;  // 24
+$ss-7: 1.75rem; // 28
+$ss-8: 2rem;    // 32
+$ss-9: 2.5rem;  // 36
+$ss-10: 3rem;   // 40
+
+//--COLOR SYSTEM----//
+
+//--PRIMARY COLOR ----//
+$theme-pale-blue: hsl(225, 100%, 94%);
+$theme-bright-blue: hsl(245, 75%, 52%);
+//--NEUTRAL COLOR ----//
+$theme-white-color: hsl(0,0%,100%);
+$theme-very-pale-blue: hsl(225, 100%, 98%);
+$theme-desaturated-blue: hsl(224, 23%, 55%);
+$theme-dark-blue: hsl(223, 47%, 23%);
+
+//--BOX SHADOW----//
+$box-shadow-1:
+0 1px 1px rgba(0,0,0,0.15),
+0 2px 2px rgba(0,0,0,0.15),
+0 4px 4px rgba(0,0,0,0.15),
+0 8px 8px rgba(0,0,0,0.15);
+
+$box-shadow-2:
+0 1px 1px rgba(0,0,0,0.12),
+0 2px 2px rgba(0,0,0,0.12),
+0 4px 4px rgba(0,0,0,0.12),
+0 8px 8px rgba(0,0,0,0.12),
+0 16px 16px rgba(0,0,0,0.12);
+
+$shadow-sharp:   $box-shadow-1;
+$shadow-diffuse: $box-shadow-2;

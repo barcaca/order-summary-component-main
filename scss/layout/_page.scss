@@ -1,0 +1,35 @@
+// ========================== //
+//           PAGE             //
+// ========================== //
+
+@use "../base" as *;
+
+/*--START LAYOUT--------------------*/
+body {
+  background: $theme-pale-blue url("/images/pattern-background-mobile.svg");
+  background-size: cover;
+  @include mq(min, sm) {
+    background: $theme-pale-blue url("/images/pattern-background-desktop.svg")
+      repeat-x;
+  }
+}
+/*--START MAIN--------------------*/
+#main {
+  @include grid(1fr, 1fr 2fr 1fr);
+  @include container(sm, $ss-6);
+  align-items: center;
+  height: 100vh;
+  .main {
+    &__attribution {
+      grid-row: 3;
+      font-size: 0.75rem;
+      text-align: center;
+      a {
+        color: hsl(228, 45%, 44%);
+      }
+    }
+  }
+}
+/*--END MAIN--------------------*/
+
+/*--END LAYOUT--------------------*/
