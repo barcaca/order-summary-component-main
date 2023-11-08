@@ -39,6 +39,9 @@
     @include grid();
     grid-column: span 2;
     text-align: start;
+    &-title{
+      @include font-style(sm);
+    }
     &-swap {
       @include font-style(sm, bold);
       color: $theme-bright-blue;

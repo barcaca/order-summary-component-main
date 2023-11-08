@@ -79,6 +79,9 @@ svg {
   font-size: 0.875rem;
   text-align: start;
 }
+.card__anual-title {
+  font-size: 0.875rem;
+}
 .card__anual-swap {
   font-size: 0.875rem;
   font-weight: 700;
