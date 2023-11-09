@@ -32,6 +32,10 @@ h6 {
   color: hsl(223, 47%, 23%);
 }
 
+button {
+  all: unset;
+}
+
 img,
 picture,
 svg {
